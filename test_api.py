@@ -2,7 +2,7 @@ import requests
 from requests.exceptions import ConnectionError, RequestException, Timeout
 
 
-url = "http://127.0.0.1:8000/predict"
+url = "http://127.0.0.1:10000/predict"
 student_data = {
     "study_hours": 5.0,
     "attendance": 80.0,
