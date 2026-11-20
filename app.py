@@ -9,7 +9,13 @@ from mltracker import Train
 
 MODEL_PATH = Path(__file__).parent / "Models" / "model.pkl"
 app = FastAPI(title="Student Pass/Fail API", docs_url="/docs", redoc_url=None)
-
+@app.get("/")
+def home():
+    return {
+        "message": "Student Pass/Fail API is running!",
+        "docs": "/docs",
+        "endpoints": ["/predict", "/train"]
+    }
 
 class Student(BaseModel):
     study_hours: float = Field(ge=0, le=24)
