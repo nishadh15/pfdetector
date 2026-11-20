@@ -12,7 +12,7 @@ app = FastAPI(title="Student Pass/Fail API", docs_url="/docs", redoc_url=None)
 @app.get("/")
 def home():
     return {
-        "message": "Student Pass/Fail API is running!",
+        "message": "I HATE ASMITHA",
         "docs": "/docs",
         "endpoints": ["/predict", "/train"]
     }
