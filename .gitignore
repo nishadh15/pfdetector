@@ -1,4 +1,5 @@
-pycache/
+@"
+__pycache__/
 *.pyc
 .venv/
 venv/
@@ -7,3 +8,4 @@ metrics.json
 mlflow.db
 mlruns/
 .DS_Store
+"@ | Out-File -Encoding utf8 .gitignore
