@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 from mltracker import Train
 
 
-MODEL_PATH = Path(__file__).parent / "models" / "model.pkl"
+MODEL_PATH = Path(__file__).parent / "Models" / "model.pkl"
 app = FastAPI(title="Student Pass/Fail API", docs_url="/docs", redoc_url=None)
 
 
